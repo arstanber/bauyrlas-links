@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="apple-itunes-app" content="app-id=6786377787">
+<title>Bauyrlas</title>
+<link rel="stylesheet" href="/page.css">
+</head>
+<body>
+<main>
+  <img class="icon" src="/icon.png" alt="Bauyrlas">
+  <h1>Bauyrlas</h1>
+  <p>Установите приложение, чтобы продолжить.<br>Жалғастыру үшін қосымшаны орнатыңыз.</p>
+  <a class="btn" href="https://apps.apple.com/app/id6786377787">App Store</a>
+  <a class="btn" href="https://play.google.com/store/apps/details?id=kz.bauyrlas.android">Google Play</a>
+</main>
+<script>
+  // Reaching this page means the app did not intercept the link, so send
+  // phones straight to their store.
+  var ua = navigator.userAgent;
+  if (/iPhone|iPad|iPod/.test(ua)) location.replace("https://apps.apple.com/app/id6786377787");
+  else if (/Android/.test(ua)) location.replace("https://play.google.com/store/apps/details?id=kz.bauyrlas.android");
+</script>
+</body>
+</html>

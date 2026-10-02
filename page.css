@@ -1,0 +1,11 @@
+:root { --bg: #fff; --fg: #1a1a1a; --muted: #6b6b6b; --brand: #DA3B26; --btn: #1a1a1a; --btn-fg: #fff; }
+@media (prefers-color-scheme: dark) { :root { --bg: #111; --fg: #f2f2f2; --muted: #a0a0a0; --btn: #f2f2f2; --btn-fg: #111; } }
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: var(--bg); color: var(--fg); font: 16px/1.45 -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, sans-serif; padding: 24px 16px; }
+main { width: 100%; max-width: 380px; text-align: center; }
+.icon { width: 88px; height: 88px; border-radius: 22px; }
+h1 { font-size: 24px; margin: 20px 0 8px; }
+p { color: var(--muted); margin: 0 0 24px; }
+a.btn { display: block; padding: 14px 16px; border-radius: 14px; text-decoration: none; font-weight: 600; margin-bottom: 10px; background: var(--btn); color: var(--btn-fg); }
+a.btn.primary { background: var(--brand); color: #fff; }
+.hidden { display: none; }

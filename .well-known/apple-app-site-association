@@ -1,0 +1,12 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["KQ2R483N7W.kz.bauyrlas.app"],
+        "components": [
+          { "/": "/*", "comment": "The whole subdomain belongs to the app: / opens it, /s/<token> is a signing invite" }
+        ]
+      }
+    ]
+  }
+}

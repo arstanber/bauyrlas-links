@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="apple-itunes-app" content="app-id=6786377787">
+<title>Bauyrlas</title>
+<link rel="stylesheet" href="/page.css">
+</head>
+<body>
+<main>
+  <img class="icon" src="/icon.png" alt="Bauyrlas">
+  <div id="sign" class="hidden">
+    <h1>Вас пригласили подписать договор</h1>
+    <p>Откройте ссылку в приложении Bauyrlas. Если его нет — установите и откройте ссылку ещё раз.<br>Шартқа қол қою үшін сілтемені Bauyrlas қосымшасында ашыңыз.</p>
+    <a id="open" class="btn primary" href="#">Открыть в приложении</a>
+  </div>
+  <div id="other">
+    <h1>Bauyrlas</h1>
+    <p>Страница не найдена.<br>Бет табылмады.</p>
+  </div>
+  <a class="btn" href="https://apps.apple.com/app/id6786377787">App Store</a>
+  <a class="btn" href="https://play.google.com/store/apps/details?id=kz.bauyrlas.android">Google Play</a>
+</main>
+<script>
+  // GitHub Pages serves this for every unknown path, which is how /s/<token>
+  // gets a page. Messenger in-app browsers don't hand universal links to the
+  // app, so offer the custom scheme as an explicit way in.
+  var m = location.pathname.match(/^\/s\/([A-Za-z0-9_-]+)\/?$/);
+  if (m) {
+    document.getElementById("sign").classList.remove("hidden");
+    document.getElementById("other").classList.add("hidden");
+    document.getElementById("open").href = "bauyrlas://s/" + m[1];
+  }
+</script>
+</body>
+</html>
