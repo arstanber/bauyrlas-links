@@ -1,0 +1,13 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "kz.bauyrlas.android",
+      "sha256_cert_fingerprints": [
+        "B2:84:65:B4:40:A8:08:02:74:1C:75:B1:39:5B:49:ED:52:B3:46:9A:3A:74:48:61:1B:4D:86:40:C1:3F:29:32",
+        "AE:BB:0E:9F:79:C1:A0:62:CF:AA:2E:B3:3D:EA:3C:85:53:AF:AD:00:D8:91:D4:CE:33:ED:9B:03:E7:6A:1F:27"
+      ]
+    }
+  }
+]
